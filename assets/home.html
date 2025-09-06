@@ -42,27 +42,27 @@
      </div>
  
      <div class="parents grid grid-cols-3 mt-8 p-3 gap-3 min-h-[200px]  ">
-         <div id="add-button" class=" text-center border-2 border-gray-300 p-3 rounded-lg ">
+         <div id="add-button" class="form-btn text-center border-2 border-gray-300 p-3 rounded-lg ">
          <img src="/assets/wallet1.png" class=" mx-auto" alt="">
          <h2 >Add Money</h2>
          </div>
-         <div id="cashout-button" class=" justify-center  border-2 border-gray-300 text-center  p-3 rounded-lg">
+         <div id="cashout-button" class=" form-btn justify-center  border-2 border-gray-300 text-center  p-3 rounded-lg">
          <img src="/assets/send1.png" class="mx-auto " alt="">
          <h2>Cashout</h2>
          </div>
-         <div  class=" justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
+         <div id="transfer-money" class="form-btn justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
          <img src="/assets/money1.png" class="mx-auto " alt="">
          <h2>Transfer</h2>
          </div>
-         <div class=" justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
+         <div id="bonus-button" class="form-btn justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
          <img src="/assets/wallet1.png" class="mx-auto " alt="">
          <h2>Get Bonus</h2>
          </div>
-         <div class=" justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
+         <div id="bil-button" class="form-btn justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
          <img src="/assets/wallet1.png" class="mx-auto " alt="">
          <h2>Pay bill</h2>
          </div>
-         <div class=" justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
+         <div id="transaction-button" class="form-btn justify-center  border-2 border-gray-300 text-center p-3 rounded-lg">
          <img src="/assets/wallet1.png" class="mx-auto " alt="">
          <h2>Transaction</h2>
          </div>
@@ -71,7 +71,7 @@
   </div>
   <div class="all-form-secitons  max-w-lg mx-auto">
     <!-- add maney  -->
-    <div id="add-money-parent">
+    <div class="form" id="add-money-parent">
         <h1 class=" font-bold my-2">Add money</h1>
         <form action=" " class=" bg-white rounded-2xl p-8">
             <div>
@@ -118,7 +118,10 @@
 
         
     </div>
-    <div  id="cash-out-parent" style="display: none;">
+
+    <!-- cashout money  -->
+
+    <div class="form" id="cash-out-parent" style="display: none;">
         <h1>Cash out hobe </h1>
         <form action=" " class=" bg-white rounded-2xl p-8">
           
@@ -152,6 +155,44 @@
             <button id="widthdraw-btn" class="btn text-white bg-[#0874f2] mt-5 w-full rounded-3xl ">Widthdraw money</button>
         </form>
     </div>
+
+    <!-- trasfer money  section start -->
+    <div class="form" id="trasfer-money-parent" style="display:none">
+        <h1 class=" my-5 font-bold">Trasfer money</h1>
+    </div>
+    <!-- get bonus money  -->
+    <div class="form" id="get-bonus-parent" style="display:none">
+        <h1 class=" my-5 font-bold">Get bonus money</h1>
+    </div>
+    <div class="form" id="pay-bil-parent" style="display:none">
+        <h1 class=" my-5 font-bold">Pay bill</h1>
+    </div>
+    <div class=" form " id="transaction-parent" style="display:none">
+       <div class="flex justify-between items-center">
+        <h1 class=" my-5 font-bold">Transaction</h1>
+        <p class=" text-[#08080880]">View all</p>
+       </div>
+
+       <div id="transaction-container">
+        
+       <div class=" bg-white rounded-xl p-3 flex justify-between items-center ">
+        <div class="flex items-center">
+            <div class="bg-[#f4f5f7]  p-3 rounded-full">
+                <img src="/assets/wallet1.png" class=" mx-auto" alt="">
+
+            </div>
+            <div class="ml-2">
+                <h1>Electricity bill</h1>
+                <p>Today 01:44 AM</p>
+            </div>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+       </div>
+       </div>
+        
+    </div>
+
+    
   </div>
   <script src="home.js"></script>
 </body>
